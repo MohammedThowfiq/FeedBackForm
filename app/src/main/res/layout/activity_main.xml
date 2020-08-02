@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RatingBar
+        android:id="@+id/et_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <EditText
+        android:id="@+id/et_myTextField"
+        android:layout_width="242dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Enter your suggestions"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ratingBar"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <RadioButton
+        android:id="@+id/et_radio_Male"
+        android:layout_width="75dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:text="Male"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_myTextField"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <RadioButton
+        android:id="@+id/et_radio_Female"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:text="Female"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toEndOf="@+id/et_radio_Male"
+        app:layout_constraintTop_toBottomOf="@+id/et_myTextField"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <SeekBar
+        android:id="@+id/et_seekBar"
+        android:layout_width="271dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_radio_Male"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <CheckBox
+        android:id="@+id/et_Terms_Conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to terms and conditions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_seekBar"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Terms_Conditions"
+        app:layout_constraintVertical_bias="0.234" />
+</androidx.constraintlayout.widget.ConstraintLayout>
